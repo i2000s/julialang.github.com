@@ -1,3 +1,49 @@
+@article{JSB15,
+	Abstract = {We present a new algorithm for solving the eigenvalue problem
+for an n × n real symmetric arrowhead matrix. The algorithm
+computes all eigenvalues and all components of the corresponding
+eigenvectors with high relative accuracy in O(n^2) operations under
+certain circumstances. The algorithm is based on a shift-and-invert
+approach. Only a single element of the inverse of the shifted
+matrix eventually needs to be computed with double the working
+precision. Each eigenvalue and the corresponding eigenvector can
+be computed separately, which makes the algorithm adaptable for
+parallel computing. Our results extend to Hermitian arrowhead
+matrices, real symmetric diagonal-plus-rank-one matrices and
+singular value decomposition of real triangular arrowhead matrices.},
+	Author = {N. Jakovcevic Stor, I. Slapnicar and J. L. Barlow},
+	Title = {Accurate eigenvalue decomposition of real
+symmetric arrowhead matrices and applications},
+	Journal = {Linear Algebra and Its Applications},
+	Volume = {464},
+	Pages = {62-89},
+	Year = {2015},
+	Doi = {10.1016/j.laa.2013.10.007},
+	URL = {http://www.sciencedirect.com/science/article/pii/S0024379513006265}
+}
+
+@article{JSB15a,
+	Abstract = {We present a new algorithm for solving an eigenvalue problem for a real symmetric matrix which is a rank-one modification of a diagonal matrix. The algorithm computes each eigenvalue and all components of the corresponding eigenvector with high relative accuracy in O(n) operations. The algorithm is based on a shift-and-invert approach. Only a single element of the inverse of the shifted matrix eventually needs to be computed with double the working precision. Each eigenvalue and the corresponding eigenvector can be computed separately, which makes the algorithm adaptable for parallel computing. Our results extend to the complex Hermitian case. The algorithm is similar to the algorithm for solving the eigenvalue problem for real symmetric arrowhead matrices from N. Jakovčević Stor et al. (2015) [16].},
+	Author = {N. Jakovcevic Stor, I. Slapnicar and J. L. Barlow},
+	Title = {Forward stable eigenvalue decomposition of rank-one modifications of diagonal matrices},
+	Journal = {Linear Algebra and Its Applications},
+	Volume = {487},
+	Pages = {301-315},
+	Year = {2015},
+	Doi = {10.1016/j.laa.2015.09.025},
+	URL = {http://www.sciencedirect.com/science/article/pii/S0024379515005406}
+}
+
+@article{JS15,
+	Abstract = {As showed in (Fiedler, 1990), any polynomial can be expressed as a characteristic polynomial of a complex symmetric arrowhead matrix. This expression is not unique. If the polynomial is real with only real distinct roots, the matrix can be chosen real. By using accurate forward stable algorithm for computing eigenvalues of real symmetric arrowhead matrices from (Jakovcevic Stor, Slapnicar, Barlow, 2015), we derive a forward stable algorithm for computation of roots of such polynomials in O(n2) operations. The algorithm computes each root to almost full accuracy. In some cases, the algorithm invokes extended precision routines, but only in the non-iterative part. Our examples include numerically difficult problems, like the well-known Wilkinson's polynomials. Our algorithm compares favourably to other method for polynomial root-finding, like MPSolve or Newton's method.},
+	Author = {N. Jakovcevic Stor and I. Slapnicar},
+	Title = {Forward stable computation of roots of real polynomials with only real distinct roots},
+	Eprinttype = {arXiv},
+	Eprint = {1509.06224},
+	Pages = {1-15},
+	Year = {2015}
+	}
+
 @article{MH15,
 	Abstract = {Background: Establishing health-related causal relationships is a central pursuit in biomedical research. Yet, the interdependent non-linearity of biological systems renders causal dynamics laborious and at times impractical to disentangle. This pursuit is further impeded by the dearth of time series that are sufficiently long to observe and understand recurrent patterns of flux. However, as data generation costs plummet and technologies like wearable devices democratize data collection, we anticipate a coming surge in the availability of biomedically-relevant time series data. Given the life-saving potential of these burgeoning resources, it is critical to invest in the development of open source software tools that are capable of drawing meaningful insight from vast amounts of time series data.
 
@@ -89,12 +135,16 @@ Our code for the numerical stochastic homogenization of elliptic problems is imp
 
 @article{LD13,
 	Abstract = {The state of numerical computing is currently characterized by a divide between highly efficient yet typically cumbersome low-level languages such as C, C++, and Fortran and highly expressive yet typically slow high-level languages such as Python and MATLAB. This paper explores how Julia, a modern programming language for numerical computing which claims to bridge this divide by incorporating recent advances in language and compiler design (such as just-in-time compilation), can be used for implementing software and algorithms fundamental to the field of operations research, with a focus on mathematical optimization. In particular, we demonstrate algebraic modeling for linear and nonlinear optimization and a partial implementation of a practical simplex code. Extensive cross-language benchmarks suggest that Julia is capable of obtaining state-of-the-art performance.},
-	Eprinttype = {arXiv},
 	Author = {Miles Lubin and Iain Dunning},
-	Eprint = {1312.1431},
-	Eprintclass = {math.OC},
-	Title = {Computing in Operations Research using {J}ulia},
-	Year = {2013}}
+	Title = {Computing in Operations Research Using {J}ulia},
+	Journal = {INFORMS Journal on Computing},
+	Volume = {27},
+	Number = {2},
+	Pages = {238-248},
+	Year = {2015},
+	Doi = {10.1287/ijoc.2014.0623},
+	URL = {http://dx.doi.org/10.1287/ijoc.2014.0623}
+}
 
 @inproceedings{OT14,
 	Abstract = {We describe a framework for solving a broad class of infinite-dimensional linear equations, consisting of almost banded operators, which can be used to represent linear ordinary differential equations with general boundary conditions. The framework contains a data structure on which row operations can be performed, allowing for the solution of linear equations by the adaptive QR approach. The algorithm achieves O(nopt) complexity, where nopt is the number of degrees of freedom required to achieve a desired accuracy, which is determined adaptively. In addition, special tensor product equations, such as partial differential equations on rectangles, can be solved by truncating the operator in the y-direction with n_y degrees of freedom and using a generalized Schur decomposition to upper triangularize, before applying the adaptive QR approach to the x-direction, requiring O(n^2_y n^{opt}_x) operations. The framework is implemented in the ApproxFun package written in the Julia programming language, which achieves highly competitive computational costs by exploiting unique features of Julia.},
@@ -360,3 +410,31 @@ doi={10.1109/HPEC.2013.6670347}
 	the trace transform.}
 }
 
+@techreport{ZH15,
+author={Zhang, Weijian and Higham, Nicholas J.},
+title={Matrix Depot: An Extensible Test Matrix Collection for Julia},
+institution={Manchester Institute for Mathematical Sciences, The
+                   University of Manchester},
+journal={MIMS EPrint},
+pages={25},
+number={2015.118},
+year={2015},
+month={Dec},
+url={http://eprints.ma.man.ac.uk/2426},
+abstract = { Matrix Depot is a Julia software package that provides
+                  easy access to a large and diverse collection of
+                  test matrices. Its novelty is threefold. First, it
+                  is extensible by the user, and so can be adapted to
+                  include the user’s own test problems. In doing so it
+                  facilitates experimentation and makes it easier to
+                  carry out reproducible research. Second, it
+                  amalgamates in a single framework three different
+                  types of matrix collections, comprising parametrized
+                  test matrices, regularization test problems, and
+                  real-life sparse matrix data. Third, it fully
+                  exploits the Julia language. It uses multiple
+                  dispatch to help provide a simple interface and, in
+                  particular, to allow matrices to be generated in any
+                  of the numeric data types supported by the language.
+                  }
+}

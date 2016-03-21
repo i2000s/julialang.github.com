@@ -48,9 +48,21 @@ requests](https://github.com/JuliaLang/julialang.github.com/).
 
 [@OT14]
 
+### [Arrowhead.jl](https://github.com/ivanslapnicar/Arrowhead.jl)
+
+[@JSB15]
+
+[@JSB15a]
+
+[@JS15]
+
 ### [RandomMatrices.jl](https://github.com/jiahao/RandomMatrices.jl)
 
 [@ONT14]
+
+### [MatrixDepot.jl](https://github.com/weijianzhang/MatrixDepot.jl)
+
+[@ZH15]
 
 ## Numerical quadrature
 
